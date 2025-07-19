@@ -3,93 +3,140 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kriti's Poetry Blog</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <title>Kriti's Poetry Blog ✨</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --main-bg: linear-gradient(135deg, #fff1eb, #ace0f9);
+      --card-bg: #ffffffdd;
+      --title-color: #c94f7c;
+      --accent-color: #ffb6b9;
+    }
+
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
+
     body {
       font-family: 'Quicksand', sans-serif;
-      background: linear-gradient(to bottom right, #fff6e0, #ffe0e9);
+      background: var(--main-bg);
       color: #2f2f2f;
       line-height: 1.6;
+      padding-bottom: 2rem;
     }
+
     header {
-      background: #ffd3b6;
-      padding: 2rem;
+      background: #ffe3e3;
       text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 2rem 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
     }
+
     header h1 {
       font-family: 'Playfair Display', serif;
       font-size: 3rem;
-      color: #8a4b3a;
+      color: var(--title-color);
     }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      color: #555;
+    }
+
     nav {
-      background: #ffaaa5;
+      background: var(--accent-color);
       display: flex;
       justify-content: center;
       gap: 2rem;
       padding: 1rem;
     }
+
     nav a {
       color: white;
+      font-weight: bold;
       text-decoration: none;
-      font-weight: 600;
       transition: color 0.3s;
     }
+
     nav a:hover {
       color: #2f2f2f;
     }
+
     section {
-      max-width: 850px;
-      margin: auto;
-      padding: 2rem;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
+
     h2 {
       font-family: 'Playfair Display', serif;
       font-size: 2rem;
+      color: #333;
       margin-bottom: 1rem;
-      color: #5a2e2e;
     }
+
     .poem {
-      background: rgba(255, 255, 255, 0.85);
-      border-radius: 12px;
-      padding: 1.5rem 2rem;
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 2rem;
       margin-bottom: 2rem;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
       animation: fadeIn 1s ease forwards;
     }
+
     .poem-title {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
+      color: var(--title-color);
       font-weight: bold;
-      margin-bottom: 0.8rem;
-      color: #d46a6a;
+      margin-bottom: 1rem;
       font-family: 'Playfair Display', serif;
     }
+
     .poem p {
+      font-size: 1.1rem;
       white-space: pre-line;
-      font-size: 1rem;
     }
+
+    .poem img {
+      width: 100%;
+      max-width: 100%;
+      margin: 1rem 0;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
+
     footer {
-      background: #8a4b3a;
+      background: #ffb6b9;
       color: white;
       text-align: center;
       padding: 1rem;
+      margin-top: 2rem;
     }
+
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
+      from { opacity: 0; transform: translateY(30px); }
       to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      .poem-title {
+        font-size: 1.4rem;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Kriti's Poetry Blog</h1>
+    <h1>Kriti's Poetry Blog ✨</h1>
+    <p>Let your soul speak in rhymes and rhythm.</p>
   </header>
 
   <nav>
@@ -105,28 +152,20 @@
       This blog is a personal space where I share poems that reflect my inner world. Thank you for reading!
     </p>
   </section>
-  
 
+  <section id="poems">
+    <h2>Poems</h2>
 
-  <section id="poems"> 
     <div class="poem">
-      
-      <div class="poem-title">Choice is yours</div>
-<img src="Focus%20on%20good%20things.png" 
-     alt="Focus on Good Things - poem by Kriti Kumari" 
-     style="max-width:100%; border-radius:12px; margin:15px 0; box-shadow:0 6px 18px rgba(0,0,0,0.15);" />
+      <div class="poem-title">Choice is Yours</div>
+      <img src="Focus%20on%20good%20things.png" alt="Focus on Good Things - poem by Kriti Kumari" />
     </div>
 
+    <div class="poem">
+      <div class="poem-title">Distraction</div>
+      <img src="distraction%20kriti.png" alt="Distraction poem by Kriti Kumari" />
+    </div>
 
-
- <div class="poem-title">Distraction</div>
-  <img src="distraction%20kriti.png" 
-       alt="Distraction poem by Kriti Kumari" 
-       style="max-width:100%; border-radius: 12px; margin-top: 15px; box-shadow: 0 6px 18px rgba(0,0,0,0.15);">
-</div>
-
-
-    <h2>Poems</h2>
     <div class="poem">
       <div class="poem-title">Glittery Gold</div>
       <p>
@@ -161,18 +200,17 @@ Embrace the challenges, way towards the sky.
 
   </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>You can reach me at: <a href="mailto:kritikumari25dubey@gmail.com">kritikumari25dubey@gmail.com</a></p>
-    </section>
-  </main>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>You can reach me at: <a href="mailto:kritikumari25dubey@gmail.com">kritikumari25dubey@gmail.com</a></p>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Kriti's Poetry Blog</p>
+    <p>© 2025 Kriti Kumari — All rights reserved ✍️</p>
   </footer>
+
 </body>
 </html>
-
 
 
 
