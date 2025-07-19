@@ -87,13 +87,12 @@
       animation: fadeIn 1s ease forwards;
     }
 
-    .poem-title {
-      font-size: 1.8rem;
-      color: var(--title-color);
-      font-weight: bold;
-      margin-bottom: 1rem;
-      font-family: 'Playfair Display', serif;
-    }
+    $1
+  background: linear-gradient(90deg, #ffb6b9, #fcd5ce);
+  padding: 0.3rem 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #ffb6b9;
+  animation: sparkle 2s infinite alternate;}
 
     .poem p {
       font-size: 1.1rem;
@@ -116,8 +115,12 @@
       margin-top: 2rem;
     }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(30px); }
+    $1
+
+@keyframes sparkle {
+  from { text-shadow: 0 0 5px #ffb6b9, 0 0 10px #ffc6c6; }
+  to { text-shadow: 0 0 15px #ffa3a3, 0 0 25px #ffe3e3; }
+}
       to { opacity: 1; transform: translateY(0); }
     }
 
@@ -130,7 +133,16 @@
         font-size: 1.4rem;
       }
     }
-  </style>
+  .series-title {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #c94f7c;
+  margin: 2rem 0 1rem;
+  text-shadow: 0 0 5px #ff9aa2;
+}
+
+$1
 </head>
 <body>
 
@@ -154,11 +166,15 @@
   </section>
 
   <section id="poems">
-    <h2>Poems</h2>
+  <h2>Poems</h2>
+
+  <div class="poem">
+    <h3 class="series-title">✨ November Series ✨</h3>
+  </div>
 
     <div class="poem">
-      <div class="poem-title">Focus on Good Things</div>
-      <img src="Focus on good things.png" alt="Focus on Good Things - poem by Kriti Kumari" />
+      <div class="poem-title">Choice is Yours</div>
+      <img src="Focus on good things.png" alt="Choice is Yours - poem by Kriti Kumari" />
     </div>
 
     <div class="poem">
@@ -196,9 +212,49 @@ Consistency lifts you high to reach and fly.<br>
 Bide your fears a fond goodbye.<br>
 Embrace the challenges, way towards the sky.
       </p>
-    </div>
+    <div class="poem">
+  <div class="poem-title">November Princess</div>
+  <p>
+Is that wind that blow?<br>
+Here I can see sun into the snow.<br>
+Now it's time for the princess glow.<br>
+This November Princess is fire that can take infinite eyes.<br>
+Don't try to mess with me as you are not able to see in my eyes.<br>
+They are cute and red. They are flower of bloom.<br>
+Don't try to hide. I have that memory that catch you just like boom.<br>
+I can ignite fire as I can. You have seen this burning flame.<br>
+It will not harm you. Better to be in my lane.<br>
+This is seeding. This is wild. As my earring. As I smile.<br>
+We have to travel. We have to go mile.<br>
+It will all okay if you will follow my line.
+  </p>
+</div>
 
-  </section>
+<div class="poem">
+  <div class="poem-title">November Princess Part 2</div>
+  <p>
+I'm a princess, no, Princess November.<br>
+In my aura, your attitude will surrender.<br>
+Ruthless, fearless, I never fall.<br>
+Effortless, limitless, I take it all.<br>
+Hold on tight, this fantasy WHITE.<br>
+Riding through shadows, I conquer the night.<br>
+Sweet like honey, yet fierce in my might.<br>
+Soft as bunny, but sharp in my flight.<br>
+Panther like dark night, but I am shining bright.<br>
+Dancing in sunlight, I play my game.<br>
+Revision for mission, not weak, sharpING my blades.<br>
+Gold on my neck, power it is alright.<br>
+Crown on my head, RULLING all night.<br>
+Princess November, hurts your way.<br>
+But she smiles over her prey.<br>
+You are now going to swAY.<br>
+Only you can do is to pray.
+  </p>
+</div>
+
+</div>
+</section>
 
   <section id="contact">
     <h2>Contact</h2>
@@ -211,7 +267,3 @@ Embrace the challenges, way towards the sky.
 
 </body>
 </html>
-
-
-
-
