@@ -3,186 +3,92 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kriti's Poetry Blog ✨</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <title>Kriti's Poetry Blog</title>
   <style>
-    :root {
-      --main-bg: linear-gradient(135deg, #fff1eb, #ace0f9);
-      --card-bg: #ffffffdd;
-      --title-color: #c94f7c;
-      --accent-color: #ffb6b9;
-    }
-
-    * {
+    body {
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
+      background-color: #f7f7f7;
+      color: #333;
     }
 
-    body {
-      font-family: 'Quicksand', sans-serif;
-      background: var(--main-bg);
-      color: #2f2f2f;
-      line-height: 1.6;
-      padding-bottom: 2rem;
-    }
-
-    header {
-      background: #ffe3e3;
+    header, footer {
+      background-color: #e0e0e0;
+      padding: 1rem;
       text-align: center;
-      padding: 2rem 1rem;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    }
-
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      color: var(--title-color);
-    }
-
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1.2rem;
-      color: #555;
     }
 
     nav {
-      background: var(--accent-color);
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem;
+      background-color: #ccc;
+      padding: 0.5rem;
+      text-align: center;
     }
 
     nav a {
-      color: white;
-      font-weight: bold;
+      margin: 0 1rem;
       text-decoration: none;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #2f2f2f;
+      color: #000;
     }
 
     section {
-      max-width: 900px;
+      max-width: 800px;
       margin: 2rem auto;
-      padding: 0 1rem;
+      padding: 1rem;
+      background-color: #fff;
+      border-radius: 8px;
     }
 
     h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2rem;
-      color: #333;
-      margin-bottom: 1rem;
-    }
-
-    .poem {
-      background: var(--card-bg);
-      border-radius: 16px;
-      padding: 2rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-      animation: fadeIn 1s ease forwards;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 0.5rem;
     }
 
     .poem-title {
-      font-size: 1.5rem;
       font-weight: bold;
-      margin-bottom: 1rem;
-      background: linear-gradient(90deg, #ffb6b9, #fcd5ce);
-      padding: 0.3rem 1rem;
-      border-radius: 12px;
-      box-shadow: 0 0 10px #ffb6b9;
-      animation: sparkle 2s infinite alternate;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
     }
 
     .poem p {
-      font-size: 1.1rem;
       white-space: pre-line;
-    }
-
-    .poem img {
-      width: 100%;
-      max-width: 100%;
-      margin: 1rem 0;
-      border-radius: 12px;
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-    }
-
-    .series-title {
-      text-align: center;
-      font-family: 'Playfair Display', serif;
-      font-size: 1.8rem;
-      color: #c94f7c;
-      margin: 2rem 0 1rem;
-      text-shadow: 0 0 5px #ff9aa2;
-    }
-
-    @keyframes sparkle {
-      from { text-shadow: 0 0 5px #ffb6b9, 0 0 10px #ffc6c6; }
-      to { text-shadow: 0 0 15px #ffa3a3, 0 0 25px #ffe3e3; }
-    }
-
-    footer {
-      background: #ffb6b9;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Kriti's Poetry Blog ✨</h1>
-    <p>Let your soul speak in rhymes and rhythm.</p>
+    <h1>Kriti's Poetry Blog</h1>
+    <p>Where feelings flow into words.</p>
   </header>
 
   <nav>
     <a href="#about">About</a>
     <a href="#poems">Poems</a>
+    <a href="#princess">Princess November</a>
+    <a href="#horror">Horror</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>
-      Hello! I'm Kriti, a passionate poet who finds joy in expressing emotions, stories, and dreams through verses.
-      This blog is a personal space where I share poems that reflect my inner world. Thank you for reading!
-    </p>
+    <p>Hello! I'm Kriti, a poet who loves capturing thoughts and emotions in verse. Welcome to my personal blog!</p>
   </section>
 
   <section id="poems">
     <h2>Poems</h2>
 
     <div class="poem">
-      <h3 class="series-title">✨ November Series ✨</h3>
-    </div>
-
-    <div class="poem">
-      <div class="poem-title">Choice is Yours</div>
-      <img src="Focus on good things.png" alt="Choice is Yours - poem by Kriti Kumari" />
-    </div>
-
-    <div class="poem">
-      <div class="poem-title">Distraction</div>
-      <img src="distraction kriti.png" alt="Distraction poem by Kriti Kumari" />
-    </div>
-
-    <div class="poem">
       <div class="poem-title">Glittery Gold</div>
       <p>
-Tell me right, glow up your light, make up your mind, go behind, and also don't lie,<br>
-I'm in the way of life. Hate it, but what you will get, fate of mine, is there something to left?<br>
-My attitude is my poison, my allude is my venom.<br>
-I am girly, but I am also little tomboy. I am cute, but also I have many coy.<br>
-Don't think about me or sense, is that warning or little suspense?<br>
-Don't try to hurt my feelings, it's sign of offense.<br>
-I don't like my phones, my phone's on hold.<br>
-If you will do it, I will be dangerly bold.<br>
+Tell me right, glow up your light, make up your mind, go behind, and also don't lie,
+I'm in the way of life. Hate it, but what you will get, fate of mine, is there something to left?
+My attitude is my poison, my allude is my venom.
+I am girly, but I am also little tomboy. I am cute, but also I have many coy.
+Don't think about me or sense, is that warning or little suspense?
+Don't try to hurt my feelings, it's sign of offense.
+I don't like my phones, my phone's on hold.
+If you will do it, I will be dangerly bold.
 As you can see, I am the glittery gold.
       </p>
     </div>
@@ -190,34 +96,39 @@ As you can see, I am the glittery gold.
     <div class="poem">
       <div class="poem-title">Deja Vu</div>
       <p>
-At your own front view, when dreams come true,<br>
-Everyone awaits for your review. Deja vu?<br>
-Yet nothing, but a true version of you.<br>
-Light up your mind, reflected in your eye view.<br>
-You have to look upon your case.<br>
-There are so many talks and thoughts you can't erase.<br>
-But concentrate, don't lose pace.<br>
-Trace your path in your own grace.<br>
-Consistency lifts you high to reach and fly.<br>
-Bide your fears a fond goodbye.<br>
+At your own front view, when dreams come true,
+Everyone awaits for your review. Deja vu?
+Yet nothing, but a true version of you.
+Light up your mind, reflected in your eye view.
+You have to look upon your case.
+There are so many talks and thoughts you can't erase.
+But concentrate, don't lose pace.
+Trace your path in your own grace.
+Consistency lifts you high to reach and fly.
+Bide your fears a fond goodbye.
 Embrace the challenges, way towards the sky.
       </p>
     </div>
 
+  </section>
+
+  <section id="princess">
+    <h2>Princess November Series</h2>
+
     <div class="poem">
       <div class="poem-title">November Princess</div>
       <p>
-Is that wind that blow?<br>
-Here I can see sun into the snow.<br>
-Now it's time for the princess glow.<br>
-This November Princess is fire that can take infinite eyes.<br>
-Don't try to mess with me as you are not able to see in my eyes.<br>
-They are cute and red. They are flower of bloom.<br>
-Don't try to hide. I have that memory that catch you just like boom.<br>
-I can ignite fire as I can. You have seen this burning flame.<br>
-It will not harm you. Better to be in my lane.<br>
-This is seeding. This is wild. As my earring. As I smile.<br>
-We have to travel. We have to go mile.<br>
+Is that wind that blow?
+Here I can see sun into the snow.
+Now it's time for the princess glow.
+This November Princess is fire that can take infinite eyes.
+Don't try to mess with me as you are not able to see in my eyes.
+They are cute and red. They are flower of bloom.
+Don't try to hide. I have that memory that catch you just like boom.
+I can ignite fire as I can. You have seen this burning flame.
+It will not harm you. Better to be in my lane.
+This is seeding. This is wild. As my earring. As I smile.
+We have to travel. We have to go mile.
 It will all okay if you will follow my line.
       </p>
     </div>
@@ -225,46 +136,48 @@ It will all okay if you will follow my line.
     <div class="poem">
       <div class="poem-title">November Princess Part 2</div>
       <p>
-I'm a princess, no, Princess November.<br>
-In my aura, your attitude will surrender.<br>
-Ruthless, fearless, I never fall.<br>
-Effortless, limitless, I take it all.<br>
-Hold on tight, this fantasy WHITE.<br>
-Riding through shadows, I conquer the night.<br>
-Sweet like honey, yet fierce in my might.<br>
-Soft as bunny, but sharp in my flight.<br>
-Panther like dark night, but I am shining bright.<br>
-Dancing in sunlight, I play my game.<br>
-Revision for mission, not weak, sharpING my blades.<br>
-Gold on my neck, power it is alright.<br>
-Crown on my head, RULLING all night.<br>
-Princess November, hurts your way.<br>
-But she smiles over her prey.<br>
-You are now going to swAY.<br>
+I'm a princess, no, Princess November.
+In my aura, your attitude will surrender.
+Ruthless, fearless, I never fall.
+Effortless, limitless, I take it all.
+Hold on tight, this fantasy WHITE.
+Riding through shadows, I conquer the night.
+Sweet like honey, yet fierce in my might.
+Soft as bunny, but sharp in my flight.
+Panther like dark night, but I am shining bright.
+Dancing in sunlight, I play my game.
+Revision for mission, not weak, sharpING my blades.
+Gold on my neck, power it is alright.
+Crown on my head, RULLING all night.
+Princess November, hurts your way.
+But she smiles over her prey.
+You are now going to swAY.
 Only you can do is to pray.
       </p>
     </div>
+
   </section>
 
-  <section id="horror-poems">
-    <h2>🕯️ Horror Poems</h2>
+  <section id="horror">
+    <h2>Horror Poems</h2>
 
     <div class="poem">
       <div class="poem-title">I am the Vampire</div>
       <p>
-Forgetting your liars, dreaming of my hires<br>
-Screaming through nighters, between twilight you want to be miGHTER<br>
-Hold up, be aware of the fume, red velvet can give you hurtful gloom<br>
-I think you know what we consume, our crimson lace has its own perfume<br>
-Bloodstain can happen in gleam, it will haunt you extreme<br>
-Echoes of my voice with green face, no redeem<br>
-Can't you see, silver dagger regime<br>
-PlantoM, moves with pride, velvet wrapped in death delight<br>
-Scheming worthless, marble tomb eyeless<br>
-Ebony mirror says, master let silk BONE sink<br>
+Forgetting your liars, dreaming of my hires
+Screaming through nighters, between twilight you want to be miGHTER
+Hold up, be aware of the fume, red velvet can give you hurtful gloom
+I think you know what we consume, our crimson lace has its own perfume
+Bloodstain can happen in gleam, it will haunt you extreme
+Echoes of my voice with green face, no redeem
+Can't you see, silver dagger regime
+PlantoM, moves with pride, velvet wrapped in death delight
+Scheming worthless, marble tomb eyeless
+Ebony mirror says, master let silk BONE sink
 And make more dream, let the people swing
       </p>
     </div>
+
   </section>
 
   <section id="contact">
@@ -273,7 +186,7 @@ And make more dream, let the people swing
   </section>
 
   <footer>
-    <p>© 2025 Kriti Kumari — All rights reserved ✍️</p>
+    <p>© 2025 Kriti Kumari — All rights reserved</p>
   </footer>
 
 </body>
