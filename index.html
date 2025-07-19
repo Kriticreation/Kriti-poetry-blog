@@ -87,12 +87,16 @@
       animation: fadeIn 1s ease forwards;
     }
 
-    $1
-  background: linear-gradient(90deg, #ffb6b9, #fcd5ce);
-  padding: 0.3rem 1rem;
-  border-radius: 12px;
-  box-shadow: 0 0 10px #ffb6b9;
-  animation: sparkle 2s infinite alternate;}
+    .poem-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      background: linear-gradient(90deg, #ffb6b9, #fcd5ce);
+      padding: 0.3rem 1rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #ffb6b9;
+      animation: sparkle 2s infinite alternate;
+    }
 
     .poem p {
       font-size: 1.1rem;
@@ -107,6 +111,20 @@
       box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
     }
 
+    .series-title {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: #c94f7c;
+      margin: 2rem 0 1rem;
+      text-shadow: 0 0 5px #ff9aa2;
+    }
+
+    @keyframes sparkle {
+      from { text-shadow: 0 0 5px #ffb6b9, 0 0 10px #ffc6c6; }
+      to { text-shadow: 0 0 15px #ffa3a3, 0 0 25px #ffe3e3; }
+    }
+
     footer {
       background: #ffb6b9;
       color: white;
@@ -114,35 +132,7 @@
       padding: 1rem;
       margin-top: 2rem;
     }
-
-    $1
-
-@keyframes sparkle {
-  from { text-shadow: 0 0 5px #ffb6b9, 0 0 10px #ffc6c6; }
-  to { text-shadow: 0 0 15px #ffa3a3, 0 0 25px #ffe3e3; }
-}
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
-
-      .poem-title {
-        font-size: 1.4rem;
-      }
-    }
-  .series-title {
-  text-align: center;
-  font-family: 'Playfair Display', serif;
-  font-size: 1.8rem;
-  color: #c94f7c;
-  margin: 2rem 0 1rem;
-  text-shadow: 0 0 5px #ff9aa2;
-}
-
-$1
+  </style>
 </head>
 <body>
 
@@ -166,11 +156,11 @@ $1
   </section>
 
   <section id="poems">
-  <h2>Poems</h2>
+    <h2>Poems</h2>
 
-  <div class="poem">
-    <h3 class="series-title">✨ November Series ✨</h3>
-  </div>
+    <div class="poem">
+      <h3 class="series-title">✨ November Series ✨</h3>
+    </div>
 
     <div class="poem">
       <div class="poem-title">Choice is Yours</div>
@@ -212,9 +202,11 @@ Consistency lifts you high to reach and fly.<br>
 Bide your fears a fond goodbye.<br>
 Embrace the challenges, way towards the sky.
       </p>
+    </div>
+
     <div class="poem">
-  <div class="poem-title">November Princess</div>
-  <p>
+      <div class="poem-title">November Princess</div>
+      <p>
 Is that wind that blow?<br>
 Here I can see sun into the snow.<br>
 Now it's time for the princess glow.<br>
@@ -227,12 +219,12 @@ It will not harm you. Better to be in my lane.<br>
 This is seeding. This is wild. As my earring. As I smile.<br>
 We have to travel. We have to go mile.<br>
 It will all okay if you will follow my line.
-  </p>
-</div>
+      </p>
+    </div>
 
-<div class="poem">
-  <div class="poem-title">November Princess Part 2</div>
-  <p>
+    <div class="poem">
+      <div class="poem-title">November Princess Part 2</div>
+      <p>
 I'm a princess, no, Princess November.<br>
 In my aura, your attitude will surrender.<br>
 Ruthless, fearless, I never fall.<br>
@@ -250,12 +242,13 @@ Princess November, hurts your way.<br>
 But she smiles over her prey.<br>
 You are now going to swAY.<br>
 Only you can do is to pray.
-  </p>
-</div>
+      </p>
+    </div>
+  </section>
 
-</div>
+  <section id="horror-poems">
+    <h2>🕯️ Horror Poems</h2>
 
-  $1
     <div class="poem">
       <div class="poem-title">I am the Vampire</div>
       <p>
@@ -272,15 +265,9 @@ Ebony mirror says, master let silk BONE sink<br>
 And make more dream, let the people swing
       </p>
     </div>
-    <div class="poem">
-      <div class="poem-title">[Title of Your Horror Poem]</div>
-      <p>
-        [Your horror poem goes here. You can send it to me and I’ll insert it.]
-      </p>
-    </div>
   </section>
 
-$1
+  <section id="contact">
     <h2>Contact</h2>
     <p>You can reach me at: <a href="mailto:kritikumari25dubey@gmail.com">kritikumari25dubey@gmail.com</a></p>
   </section>
@@ -291,4 +278,5 @@ $1
 
 </body>
 </html>
+
 
